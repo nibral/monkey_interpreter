@@ -66,6 +66,7 @@ func (ls *LetStatement) String() string {
 	out.WriteString(ls.TokenLiteral() + " ")
 	out.WriteString(ls.Name.String())
 	out.WriteString(" = ")
+	out.WriteString(ls.Value.String())
 
 	return out.String()
 }
